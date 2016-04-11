@@ -9,9 +9,11 @@ namespace ConsoleApplication1
             
         }
 
-        public Array PrimeFinder(int numbeOfPrimesReq)
+        public int[] PrimeFinder(int numberOfPrimesReq)
         {
-            throw new NotImplementedException();
+            int[] primeArray = new int[numberOfPrimesReq];
+            
+            return primeArray;
         }
 
         public bool IsPrime(int numberToCheck)

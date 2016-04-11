@@ -11,10 +11,9 @@ namespace PrimeGridUnitTest
         public void TestPrimeFinder_ReturnsCorrectNoOfPrimes()
         {
             PrimeGrid target = new PrimeGrid();
-            int numbeOfPrimesReq = 5;
-            int expected = 5;
-            Array primeArray = target.PrimeFinder(numbeOfPrimesReq);
-            int actual = primeArray.Length;
+            int numberOfPrimesReq = 5;
+            int[] expected = {2,3,5,7,11};
+            int[] actual = target.PrimeFinder(numberOfPrimesReq);
             Assert.AreEqual(expected, actual);
         }
 
