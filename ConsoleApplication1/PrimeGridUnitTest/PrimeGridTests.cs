@@ -46,10 +46,19 @@ namespace PrimeGridUnitTest
         }
 
         [TestMethod]
-        public void TestIsPrime_PrimesAboveTwoReturnTrue()
+        public void TestIsPrime_SevenReturnsTrue()
         {
             PrimeGrid target = new PrimeGrid();
             int numberToCheck = 7;
+            Boolean actual = target.IsPrime(numberToCheck);
+            Assert.IsTrue(actual);
+        }
+
+        [TestMethod]
+        public void TestIsPrime_NinetySevenReturnsTrue()
+        {
+            PrimeGrid target = new PrimeGrid();
+            int numberToCheck = 97;
             Boolean actual = target.IsPrime(numberToCheck);
             Assert.IsTrue(actual);
         }
