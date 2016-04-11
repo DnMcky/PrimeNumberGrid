@@ -17,5 +17,14 @@ namespace PrimeGridUnitTest
             int actual = primeArray.Length;
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestIsPrime_EvenNumbersReturnFalse()
+        {
+            PrimeGrid target = new PrimeGrid();
+            int numberToCheck = 4; //Using 4 as 2 is prime - create test to account for that next
+            Boolean actual = target.IsPrime(numberToCheck);
+            Assert.IsFalse(actual);
+        }
     }
 }

@@ -13,5 +13,10 @@ namespace ConsoleApplication1
         {
             throw new NotImplementedException();
         }
+
+        public bool IsPrime(int numberToCheck)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
