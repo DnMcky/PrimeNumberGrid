@@ -21,6 +21,11 @@ namespace ConsoleApplication1
 
             if (numberToCheck % 2 == 0) return false;
 
+            for (int i = 3; i < numberToCheck; i += 2)
+            {
+                if (numberToCheck % i == 0) return false;
+            }
+
             return true;
         }
     }
