@@ -1,18 +1,39 @@
 ﻿using System;
+using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ConsoleApplication1
 {
     public class PrimeGrid
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            
+            PrimeGrid primeGrid = new PrimeGrid();
+            int[] primes = primeGrid.PrimeFinder(5);
+            Console.Write(primes);
+            Console.ReadKey();
         }
 
         public int[] PrimeFinder(int numberOfPrimesReq)
         {
+            bool a = false;
+            int i = 1;
+            int j = 0;
             int[] primeArray = new int[numberOfPrimesReq];
-            
+            while (a == false) 
+            {
+                if (IsPrime(i).Equals(true))
+                {
+                    primeArray[j] = i;
+                    j++;
+                }
+                
+                if (j == numberOfPrimesReq)
+                {
+                    a = true;
+                }
+                i++;
+            }
             return primeArray;
         }
 

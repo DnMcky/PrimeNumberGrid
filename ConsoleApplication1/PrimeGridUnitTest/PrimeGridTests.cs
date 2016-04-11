@@ -12,9 +12,13 @@ namespace PrimeGridUnitTest
         {
             PrimeGrid target = new PrimeGrid();
             int numberOfPrimesReq = 5;
-            int[] expected = {2,3,5,7,11};
+            int[] expected = new int[5] {2,3,5,7,11};
             int[] actual = target.PrimeFinder(numberOfPrimesReq);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected[0], actual[0]);
+            Assert.AreEqual(expected[1], actual[1]);
+            Assert.AreEqual(expected[2], actual[2]);
+            Assert.AreEqual(expected[3], actual[3]);
+            Assert.AreEqual(expected[4], actual[4]);
         }
 
         [TestMethod]
@@ -22,7 +26,7 @@ namespace PrimeGridUnitTest
         {
             PrimeGrid target = new PrimeGrid();
             int numberToCheck = 4; //Using 4 as 2 is prime - create test to account for that next
-            Boolean actual = target.IsPrime(numberToCheck);
+            bool actual = target.IsPrime(numberToCheck);
             Assert.IsFalse(actual);
         }
 
