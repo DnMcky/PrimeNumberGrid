@@ -26,5 +26,14 @@ namespace PrimeGridUnitTest
             Boolean actual = target.IsPrime(numberToCheck);
             Assert.IsFalse(actual);
         }
+
+        [TestMethod]
+        public void TestIsPrime_TwoReturnsTrue()
+        {
+            PrimeGrid target = new PrimeGrid();
+            int numberToCheck = 2; 
+            Boolean actual = target.IsPrime(numberToCheck);
+            Assert.IsTrue(actual);
+        }
     }
 }
