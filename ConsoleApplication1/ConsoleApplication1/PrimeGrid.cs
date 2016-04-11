@@ -16,6 +16,7 @@ namespace ConsoleApplication1
 
         public bool IsPrime(int numberToCheck)
         {
+            if (numberToCheck == 2) return true;
             if (numberToCheck % 2 == 0) return false;
             return true;
         }
