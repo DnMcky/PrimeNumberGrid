@@ -65,5 +65,17 @@ namespace PrimeGridUnitTest
             Boolean actual = target.IsPrime(numberToCheck);
             Assert.IsTrue(actual);
         }
+
+        [TestMethod]
+        public void TestGridPrint_MultiplyReturnsCorrectAnswer()
+        {
+            PrimeGrid target = new PrimeGrid();
+            int i = 3;
+            int j = 97;
+            int expected = 281;
+            int actual = target.Multiply(i, j);
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }

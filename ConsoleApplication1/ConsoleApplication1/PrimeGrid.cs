@@ -10,7 +10,9 @@ namespace ConsoleApplication1
         {
             PrimeGrid primeGrid = new PrimeGrid();
             int[] primes = primeGrid.PrimeFinder(5);
-            Console.Write(primes);
+            Console.Write(primes[0]);
+            Console.Write(primes[1]);
+            Console.Write(primes[2]);
             Console.ReadKey();
         }
 
@@ -50,6 +52,11 @@ namespace ConsoleApplication1
             }
 
             return true;
+        }
+
+        public int Multiply(int i, int j)
+        {
+            throw new NotImplementedException();
         }
     }
 }
