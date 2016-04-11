@@ -1,0 +1,6 @@
+c:\users\dhjmac\documents\findmypast\primenumbergen\primenumbergrid\ConsoleApplication1\ConsoleApplication1\obj\Debug\PrimesGrid.csprojResolveAssemblyReference.cache
+c:\users\dhjmac\documents\findmypast\primenumbergen\primenumbergrid\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\dhjmac\documents\findmypast\primenumbergen\primenumbergrid\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\dhjmac\documents\findmypast\primenumbergen\primenumbergrid\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\dhjmac\documents\findmypast\primenumbergen\primenumbergrid\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+c:\users\dhjmac\documents\findmypast\primenumbergen\primenumbergrid\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
