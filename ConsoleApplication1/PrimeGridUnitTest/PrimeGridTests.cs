@@ -72,8 +72,20 @@ namespace PrimeGridUnitTest
             PrimeGrid target = new PrimeGrid();
             int i = 3;
             int j = 97;
-            int expected = 281;
+            int expected = 291;
             int actual = target.Multiply(i, j);
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestGridPrint_MultiplyUsingList()
+        {
+            PrimeGrid target = new PrimeGrid();
+            int numberOfPrimesReq = 5;
+            int[] list1 = target.PrimeFinder(numberOfPrimesReq);
+            int[] list2 = list1;
+            int expected = 33;
+            int actual = target.Multiply(list1[1], list2[4]);
             Assert.AreEqual(expected, actual);
         }
 

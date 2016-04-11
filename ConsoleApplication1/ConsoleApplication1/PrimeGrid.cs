@@ -10,10 +10,6 @@ namespace ConsoleApplication1
         {
             PrimeGrid primeGrid = new PrimeGrid();
             int[] primes = primeGrid.PrimeFinder(5);
-            Console.Write(primes[0]);
-            Console.Write(primes[1]);
-            Console.Write(primes[2]);
-            Console.ReadKey();
         }
 
         public int[] PrimeFinder(int numberOfPrimesReq)
@@ -56,7 +52,23 @@ namespace ConsoleApplication1
 
         public int Multiply(int i, int j)
         {
-            throw new NotImplementedException();
+            return i*j;
+        }
+
+        public void PrintGrid(int[] listOfPrimes)
+        {
+            int[] listOne = listOfPrimes;
+            int[] listTwo = listOfPrimes;
+            Console.Write("/t");
+            foreach (var prime in listOne)
+            {
+                foreach (var prime2 in listTwo)
+                {
+                    int answer = Multiply(prime, prime2);
+                    Console.Write(answer + "/t");
+                }
+                Console.Write("/n");
+            }
         }
     }
 }
